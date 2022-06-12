@@ -29,9 +29,9 @@ The next step are similar, but use the official Pypi:
 
 2. Create new git tag
 
-```
-git tag -a vX.Y.Z -m "build: release X.Y.Z"
-git push --tags
+```bash
+$git tag -a vX.Y.Z -m "build: release X.Y.Z"
+$git push --tags
 ```
 
 3. Add changelog in [releases](https://github.com/diverso-lab/core/releases)
@@ -43,8 +43,8 @@ git push --tags
 
 4. Update Pypi package
 
-```
+```bash
 # With the clean repository and previous steps finished
-python3 setup.py sdist bdist_wheel
-python3 -m twine upload --repository pypi dist/*
+$python3 setup.py sdist bdist_wheel
+$python3 -m twine upload --repository pypi dist/*
 ```

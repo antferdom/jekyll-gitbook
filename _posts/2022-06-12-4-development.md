@@ -12,23 +12,23 @@ layout: post
 
 Configure your plugins, there are at the moment two separate plugins/metamodels repositories:
 
-```
-git clone git@github.com:diverso-lab/fm_metamodel.git
-git clone git@github.com:diverso-lab/pysat_metamodel.git
+```bash
+$git clone git@github.com:diverso-lab/fm_metamodel.git
+$git clone git@github.com:diverso-lab/pysat_metamodel.git
 ```
 
 If you want to use the plugins, you need edit an environment variable with the full path of the plugins/metamodels:
 
 Example:
 
-```
-export PLUGIN_PATHS=~/diverso-dev/fm_metamodel/:~/diverso-dev/pysat_metamodel/
+```bash
+$export PLUGIN_PATHS=~/diverso-dev/fm_metamodel/:~/diverso-dev/pysat_metamodel/
 ```
 
 Install full environment for develop:
 
-```
-make dev
+```bash
+$make dev
 ```
 
 Your virtual environment is installed inside core directory. It is crucial to use it during development and testing.
@@ -47,22 +47,22 @@ git clone git@github.com:diverso-lab/pysat_metamodel.git
 
 Create virtual environment and install repositories in editable mode:
 
-```
-python3 -m venv env
-source env/bin/activate
-pip install -e core[dev]
-pip install -e fm_metamodel
-pip install -e pysat_metamodel
+```bash
+$python3 -m venv env
+$source env/bin/activate
+$pip install -e core[dev]
+$pip install -e fm_metamodel
+$pip install -e pysat_metamodel
 ```
 
 There is a problem with plugins in editable mode because we use find_namespace_package from setuptools for install it.
 If you want that discover find your plugins, you need make a symbolics links inside core repository:
 
-```
-mkdir core/famapy/metamodels
+```bash
+$mkdir core/famapy/metamodels
 #it is important to specify absolute paths for the origin route when creating symbolic links
-ln -s ~/diverso-dev/fm_metamodel/famapy/metamodels/fm_metamodel core/famapy/metamodels/fm_metamodel
-ln -s ~/diverso-dev/pysat_metamodel/famapy/metamodels/pysat_metamodel core/famapy/metamodels/pysat_metamodel
+$ln -s ~/diverso-dev/fm_metamodel/famapy/metamodels/fm_metamodel core/famapy/metamodels/fm_metamodel
+$ln -s ~/diverso-dev/pysat_metamodel/famapy/metamodels/pysat_metamodel core/famapy/metamodels/pysat_metamodel
 ```
 
 Your environment is prepared.
@@ -72,32 +72,32 @@ Your environment is prepared.
 
 With the module installed, you can execute:
 
-```
-pip install pytest
-make test
+```bash
+$pip install pytest
+$make test
 ```
 
 #### Run test with coverage
 
-```
-pip install pytest coverage
-make cov
+```bash
+$pip install pytest coverage
+$make cov
 ```
 
 
 #### Review code quality and styles error
 
-```
-pip install prospector
-make lint
+```bash
+$pip install prospector
+$make lint
 ```
 
 
 #### Review hint typing
 
-```
-pip install mypy
-make mypy
+```bash
+$pip install mypy
+$make mypy
 ```
 
 ### Deployment
@@ -111,8 +111,8 @@ The tools is `famapy_admin.py`
 
 You can create a new plugins with the next command:
 
-```
-famapy_admin.py --path PLUGIN_PATH NAME_PLUGIN EXTENSION_PLUGIN
+```bash
+$famapy_admin.py --path PLUGIN_PATH NAME_PLUGIN EXTENSION_PLUGIN
 # Example
-famapy_admin.py --path /home/user/famapy-plugin1 plugin1 plug1
+$famapy_admin.py --path /home/user/famapy-plugin1 plugin1 plug1
 ```

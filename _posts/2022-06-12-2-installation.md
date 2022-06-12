@@ -16,25 +16,25 @@ You need python version 3.9+
 
 To install the core of the framework: 
 
-```
-pip install famapy
+```bash
+$pip install famapy
 ```
 but remember that to execute analysis operation you might need some other repositories. For example, to run some analysis operations [AAFM](https://idus.us.es/handle/11441/78317) over feature models you might also want to install some model plugin for feature models as well as some SAT solver for the analysis support:
 
-```
-pip install famapy-fm famapy-sat
+```bash
+$pip install famapy-fm famapy-sat
 ```
 This will install both, the plugin that enables support for feature models and the plugin that install SAT support. 
 
 For application and operation usage, it is recommended but not mandatory to install hug, as it provides an API as an endpoint for the application.
 
-```
-pip install hug
+```bash
+$pip install hug
 ```
 
 ### Advanced
 You might also want to install famapy without relying on any package manager, to do that, simply clone each repository of the organization and execute its install. For example, to install the core you might need to execute:
-```
-git clone https://github.com/diverso-lab/core
-python setup.py install
+```bash
+$git clone https://github.com/diverso-lab/core
+$python setup.py install
 ```

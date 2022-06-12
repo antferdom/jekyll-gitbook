@@ -11,13 +11,13 @@ layout: post
 1. Find one issue you want to resolve. Make sure nobody else is working on such issue.
 2. Follow the [[Development|4.-Development]] guide to set up the project. Consider you will have to fork the project you want to contribute to.
 3. Create a new [branch](#how-should-i-name-my-branches) from develop in your forked project.
-```
-git branch new-branch develop
+```bash
+$git branch new-branch develop
 ```
 4. Make an [empty commit](#first-commit) on this branch and push.
-```
-git commit -m 'message' --allow-empty
-git push -u origin new-branch
+```bash
+$git commit -m 'message' --allow-empty
+$git push -u origin new-branch
 ```
 
 5. Create a PR with this empty commit, from your new branch, to base repository's develop branch. This PR's name must end with a keyword such as "solves" or "fixes" followed by the issue it solves (e.g., solves #115)
