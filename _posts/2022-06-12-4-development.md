@@ -101,7 +101,7 @@ $make mypy
 ```
 
 ### Deployment
-You can check how to deploy this tool using different delivery options in [[Deployment|6.-Deployment]].
+You can check how to deploy this tool using different delivery options in [Deployment]({% link _posts/2022-06-12-6-deployment.md %}).
 
 ### Create new plugins with the provide generator tool
 
