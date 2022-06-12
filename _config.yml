@@ -37,6 +37,10 @@ markdown_ext:     markdown,mkdown,mkdn,mkd,md
 # Permalinks
 permalink:        /:categories/:year-:month-:day-:title:output_ext
 
+relative_links:
+  enabled:     true
+  collections: false
+
 exclude:
   - _drafts
 
@@ -54,3 +58,4 @@ regenerate:       true
 plugins:
   - jekyll-feed
   - jemoji
+  - jekyll-relative-links
