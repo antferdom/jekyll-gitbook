@@ -7,6 +7,6 @@ gem "jekyll"
 gem 'jekyll-feed'
 gem 'jemoji'
 gem 'webrick'
-gem 'jekyll-relative-links'
+# gem 'jekyll-relative-links'
 
 # gem "rails"
