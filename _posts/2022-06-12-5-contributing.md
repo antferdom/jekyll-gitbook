@@ -9,7 +9,7 @@ layout: post
 # I want to contribute to the project. What should I do?
 
 1. Find one issue you want to resolve. Make sure nobody else is working on such issue.
-2. Follow the [[Development|4.-Development]] guide to set up the project. Consider you will have to fork the project you want to contribute to.
+2. Follow the [Development guide](https://flamapy.github.io/docs/jekyll/2022-06-12-4-development.html) to set up the project. Consider you will have to fork the project you want to contribute to.
 3. Create a new [branch](#how-should-i-name-my-branches) from develop in your forked project.
 ```bash
 $git branch new-branch develop
