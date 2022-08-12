@@ -59,10 +59,10 @@ There is a problem with plugins in editable mode because we use find_namespace_p
 If you want that discover find your plugins, you need make a symbolics links inside core repository:
 
 ```bash
-$mkdir core/famapy/metamodels
+$mkdir core/flamapy/metamodels
 #it is important to specify absolute paths for the origin route when creating symbolic links
-$ln -s ~/diverso-dev/fm_metamodel/famapy/metamodels/fm_metamodel core/famapy/metamodels/fm_metamodel
-$ln -s ~/diverso-dev/pysat_metamodel/famapy/metamodels/pysat_metamodel core/famapy/metamodels/pysat_metamodel
+$ln -s ~/diverso-dev/fm_metamodel/flamapy/metamodels/fm_metamodel core/flamapy/metamodels/fm_metamodel
+$ln -s ~/diverso-dev/pysat_metamodel/flamapy/metamodels/pysat_metamodel core/flamapy/metamodels/pysat_metamodel
 ```
 
 Your environment is prepared.
@@ -105,14 +105,14 @@ You can check how to deploy this tool using different delivery options in [Deplo
 
 ### Create new plugins with the provide generator tool
 
-FaMaPy framework provides a tools to generate structure for new plugins.
+FlamaPy framework provides a tools to generate structure for new plugins.
 
-The tools is `famapy_admin.py`
+The tools is `flamapy_admin.py`
 
 You can create a new plugins with the next command:
 
 ```bash
-$famapy_admin.py --path PLUGIN_PATH NAME_PLUGIN EXTENSION_PLUGIN
+$flamapy_admin.py --path PLUGIN_PATH NAME_PLUGIN EXTENSION_PLUGIN
 # Example
-$famapy_admin.py --path /home/user/famapy-plugin1 plugin1 plug1
+$flamapy_admin.py --path /home/user/flamapy-plugin1 plugin1 plug1
 ```
