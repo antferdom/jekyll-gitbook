@@ -13,8 +13,9 @@ layout: post
 Configure your plugins, there are at the moment two separate plugins/metamodels repositories:
 
 ```bash
-$git clone git@github.com:diverso-lab/fm_metamodel.git
-$git clone git@github.com:diverso-lab/pysat_metamodel.git
+$git clone git@github.com:flamapy/fm_metamodel.git
+$git clone git@github.com:flamapy/pysat_metamodel.git
+$git clone git@github.com:flamapy/bdd_metamodel.git
 ```
 
 If you want to use the plugins, you need edit an environment variable with the full path of the plugins/metamodels:
@@ -22,7 +23,7 @@ If you want to use the plugins, you need edit an environment variable with the f
 Example:
 
 ```bash
-$export PLUGIN_PATHS=~/diverso-dev/fm_metamodel/:~/diverso-dev/pysat_metamodel/
+$export PLUGIN_PATHS=~/flamapy/fm_metamodel/:~/flamapy/pysat_metamodel/:~/flamapy/bdd_metamodel/
 ```
 
 Install full environment for develop:
@@ -39,7 +40,7 @@ Your virtual environment is installed inside core directory. It is crucial to us
 The advise is create a parent folder where install the tools and download all repositories:
 
 ```
-mkdir diverso; cd diverso
+mkdir diverso-lab; cd diverso-lab
 git clone git@github.com:diverso-lab/core.git
 git clone git@github.com:diverso-lab/fm_metamodel.git
 git clone git@github.com:diverso-lab/pysat_metamodel.git
