@@ -14,11 +14,13 @@ The main features of the framework are:
 
 In this wiki you'll find the documentation of this project. 
 
-- [2. Installation](https://flamapy.github.io/docs/jekyll/2022-06-12-1-installation.html)
-- [3. Usage](https://flamapy.github.io/docs/jekyll/2022-06-12-2-usage.html)
-- [4. Development](https://flamapy.github.io/docs/jekyll/2022-06-12-3-development.html)
+- [1. Installation](https://flamapy.github.io/docs/jekyll/2022-06-12-1-installation.html)
+- [2. Usage](https://flamapy.github.io/docs/jekyll/2022-06-12-2-usage.html)
+- [3. Development](https://flamapy.github.io/docs/jekyll/2022-06-12-3-development.html)
 
+## Google colab First steps
 
+- [1. Google colab](https://colab.research.google.com/drive/1ktuEn2KAqv7dbzeHQc-G_kUxUEW-n_av?usp=sharing)
 
 
 ## Available plugins and related projects
