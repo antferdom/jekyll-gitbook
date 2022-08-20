@@ -20,7 +20,7 @@ In this wiki you'll find the documentation of this project.
 
 ## Google colab First steps
 
-- [1. Google colab](https://colab.research.google.com/drive/1ktuEn2KAqv7dbzeHQc-G_kUxUEW-n_av?usp=sharing)
+- [Google colab project](https://colab.research.google.com/drive/1ktuEn2KAqv7dbzeHQc-G_kUxUEW-n_av?usp=sharing)
 
 
 ## Available plugins and related projects
