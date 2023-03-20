@@ -10,6 +10,7 @@ version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://flamapy.github.io/docs'
+# Comment on these line to deploy in development
 baseurl:          'https://flamapy.github.io/docs'
 rss:              RSS
 
